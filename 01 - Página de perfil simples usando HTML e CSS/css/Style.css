@@ -151,6 +151,16 @@ body {
 .perfil {
     position: relative;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+.perfil div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .linhaFotoPerfil {
     width: 100px;
@@ -158,6 +168,7 @@ body {
     border: 3px solid #1c1c1c;
     border-radius: 6px;
     transform: rotate(20deg);
+    margin-bottom: 10px;
 }
 .fotoPerfil {
     position: absolute;
@@ -176,16 +187,10 @@ body {
     margin-bottom: 10px;
 }
 
-.descricao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.descricao h2 {
+.perfil div h2 {
     font-family: GangOfThree;
 }
-.descricao h5 {
+.perfil div h5 {
     font-size: 16px;
     font-family: Inversionz;
 }
