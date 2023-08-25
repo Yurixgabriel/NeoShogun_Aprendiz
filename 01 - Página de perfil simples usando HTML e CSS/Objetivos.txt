@@ -1,0 +1,13 @@
+Objetivos Principais:
+- Estruturar uma página HTML para exibir informações de perfil.
+- Utilizar CSS para estilizar o layout, fontes e cores.
+- Incluir imagem de perfil e elementos de texto.
+- Criar uma interface visualmente atraente.
+- Garantir que a página seja responsiva para dispositivos diferentes.
+
+Desafios Adicionais:
+- Adicionar efeito de hover em botões ou links.
+- Explorar diferentes esquemas de cores.
+- Experimentar com layout flexbox ou grid.
+- Incorporar ícones para informações pessoais.
+- Testar a página em vários navegadores para compatibilidade.

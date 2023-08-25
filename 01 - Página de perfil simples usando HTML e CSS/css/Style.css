@@ -1,0 +1,332 @@
+@font-face {
+    font-family: "GangOfThree";
+    src: url("../font/go3v2.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Harukaze";
+    src: url("../font/Harukaze.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Inversionz";
+    src: url("../font/Inversionz\ Unboxed.otf") format("truetype");
+    font-weight: normal;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;  
+}
+
+body {
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom right, #2ed9eb, #0effb9);
+    border-radius: 5px;
+}
+
+.B1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    margin-right: 10px;
+}
+.logo {
+    width: 400px;
+}
+.B1-content {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.listaProjetos {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    overflow-y: scroll;
+}
+
+.projetoBorda {
+    min-width: 100%;
+    min-height: 100px;
+}
+
+.projeto {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: #1c1c1cad;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px black;
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+.projeto img {
+    width: 80%;
+    margin-top: -10px;
+}
+.projeto h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: white;
+}
+.projeto:hover {
+    background-color: #2b2e2e;
+}
+
+.tiruloListaProjetos {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tiruloListaProjetos h1 {
+    width: 70%;
+    height: 20px;
+    padding-top: 1px;
+    text-align: center;
+    font-size: 14px;
+    font-family: GangOfThree;
+    letter-spacing: 2px;
+    color: #181818;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom right, #2ed9eb, #0effb9);
+    box-shadow: 0px 0px 20px black;
+}
+.tiruloListaProjetos h1 img {
+    height: 10px;
+}
+
+.B2 {
+    width: 30%;
+    height: 100%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fichaPerfil {
+    width: 98%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #2ed9eb, #0effb9);
+}
+
+.perfil {
+    position: relative;
+    margin-top: 10px;
+}
+.linhaFotoPerfil {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #1c1c1c;
+    border-radius: 6px;
+    transform: rotate(20deg);
+}
+.fotoPerfil {
+    position: absolute;
+    top: 0%;
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    background-color: #1c1c1c;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.808);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.fotoPerfil img {
+    height: 80%;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.descricao h2 {
+    font-family: GangOfThree;
+}
+.descricao h5 {
+    font-size: 16px;
+    font-family: Inversionz;
+}
+
+.nota {
+    width: 90%;
+    margin-top: 6px;
+}
+.nota h6 {
+    font-size: 14px;
+    font-family: GangOfThree;
+    color: #181818;
+}
+.nota p {
+    font-family: Inversionz;
+}
+
+.follows {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #181818;
+    padding-top: 14px;
+}
+.dadosFollows {
+    width: 100%;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.dadosFollows div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dadosFollows div h4 {
+    font-family: GangOfThree;
+    color: #181818;
+}
+.dadosFollows div p {
+    font-size: 14px;
+    font-family: Inversionz;
+}
+
+.follows button {
+    width: 100%;
+    height: 30px;
+    background: #181818;
+    border: 3px solid #181818;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+.follows button p {
+    font-family: GangOfThree;
+    background-image: linear-gradient(to bottom right, #2ed9eb, #0effb9);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 0.3s;
+}
+.follows button:hover {
+    background: none;
+}
+.follows button:hover p {
+    color: #181818;
+}
+
+.fichaCommits {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.commits {
+    width: 60%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    list-style-type: none;
+}
+.commit {
+    width: 6px;
+    height: 6px;
+}
+.commit:nth-child(3n+1) {
+    background-color: #1c1c1c;
+}
+.commit:nth-child(3n+2) {
+    background-color: #364645;
+}
+.commit:nth-child(3n) {
+    background-image: linear-gradient(to bottom right, #2ed9eb, #0effb9);
+}
+
+.linhaCommits {
+    width: 60%;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #1c1c1c;
+}
+.linhaCommits div {
+    width: 75%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #2ed9eb, #0effb9);
+    border-radius: 10px;
+}
+.fichaCommits p {
+    font-family: GangOfThree;
+    background-image: linear-gradient(to bottom right, #2ed9eb, #0effb9);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 2px;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.menu {
+    width: 100%;
+    height: 4%;
+    background-image: linear-gradient(to bottom right, #2ed9eb, #0effb9);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu i {
+    color: #18181850;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+.menu i:hover {
+    color: #181818;
+}
+.menu i:nth-child(4) {
+    color: #181818;
+}
