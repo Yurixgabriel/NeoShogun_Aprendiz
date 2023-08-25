@@ -66,11 +66,8 @@ body {
     align-items: center;
     justify-items: center;
     overflow-y: scroll;
-}
-
-.projetoBorda {
-    min-width: 100%;
-    min-height: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .projeto {
