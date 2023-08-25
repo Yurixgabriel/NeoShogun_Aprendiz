@@ -16,6 +16,8 @@
         width: 100%;
         height: 100%;
         border-radius: 0%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 
     .perfil {
@@ -49,9 +51,27 @@
     }
 
     .menu {
+        width: 100%;
         position: fixed;
         bottom: 0%;
         border-radius: 0%;
+    }
+
+    .fichaCommits {
+        position: relative;
+        height: 30%;
+        background: #181818;
+    }
+    .fichaCommits::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-bottom: 3px solid transparent;
+        background-image: linear-gradient(to bottom right, #2ed9eb, #0effb9);
+        z-index: -1;
     }
 
     .B1 {
@@ -83,6 +103,6 @@
     }
 }
 
-@media screen and (condições) {
-    /* Estilos aplicados quando as condições são atendidas */
+@media screen and (max-width: 1024px) {
+    
 }
