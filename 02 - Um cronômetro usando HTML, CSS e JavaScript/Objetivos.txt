@@ -1,0 +1,10 @@
+Objetivos Principais:
+- Criar uma interface de usuário com elementos HTML para exibir o cronômetro.
+- Implementar lógica em JavaScript para iniciar, pausar e zerar o cronômetro.
+- Exibir o tempo decorrido de forma clara e legível na interface.
+- Adicionar estilos CSS para tornar o cronômetro visualmente atraente.
+- Testar o cronômetro para garantir que funcione de forma confiável.
+
+Desafios Adicionais:
+- Personalizar o design do cronômetro.
+- Tornar a interface do cronômetro responsiva para diferentes tamanhos de tela.
