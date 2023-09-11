@@ -21,7 +21,8 @@ body {
 }
 
 .time {
-    margin-top: 20%;
+    position: relative;
+    margin-top: 15%;
     font-family: GangOfThree;
     font-size: 80px;
     display: flex;
@@ -31,8 +32,18 @@ body {
     -webkit-background-clip: text;
     color: transparent;
 }
+.time div {
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    right: 50%;
+    background: none;
+    display: flex;
+    justify-content: center;
+}
 
 .reset {
+    text-align: center;
     background: none;
     border: none;
     font-size: 16px;
