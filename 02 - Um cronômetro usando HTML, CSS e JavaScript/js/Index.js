@@ -50,6 +50,17 @@ function timer() {
             clearInterval(cronometro);
         }
     }
+
+    var btnReset = document.getElementById("reset");
+    btnReset.addEventListener("click", resetTimer);
+    function resetTimer() {
+        valorH = 0;
+        valorMin = 0;
+        valorSeg = 0;
+        h.innerHTML = "00";
+        min.innerHTML = "00";
+        seg.innerHTML = "00";
+    }
 }
   
 timer();
