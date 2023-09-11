@@ -66,15 +66,16 @@ body {
     -webkit-background-clip: border;
     border: 3px solid transparent;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .selector {
     position: absolute;
     min-width: 40px;
     min-height: 40px;
+    border: none;
     border-radius: 50%;
     background-image: linear-gradient(to bottom right, #2ed9eb, #0effb9);
-    cursor: pointer;
     transition: 0.3s;
 }
 

@@ -61,6 +61,18 @@ function timer() {
         min.innerHTML = "00";
         seg.innerHTML = "00";
     }
+
+    var btnControl = document.getElementById("controlSelector");
+    var controlSelector = document.getElementById("selector");
+    btnControl.addEventListener("click", control);
+    function control() {
+        if (controlSelector.style.left !== "47%") {
+            controlSelector.style.left = "47%";
+            clearInterval(cronometro);
+        } else {
+            controlSelector.style.left = "-1%";
+            cronometro = setInterval(time, 1000);
+        }
+    }
 }
-  
 timer();
