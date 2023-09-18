@@ -11,19 +11,16 @@
     </head>
 
     <body>
-        <img class="lampada1" src="./img/lampada.png" alt="lampada">
-        <img class="lampada2" src="./img/lampada.png" alt="lampada">
-
-        <div>
+        <div class="calculadora">
             <!-- Display -->
             <div>
-                <input type="text">
-                <span>---</span>
+                <input type="text" id="display">
+                <span id="result">---</span>
             </div>
 
             <!-- Botões -->
-            <div>
-                <div>
+            <div class="btns">
+                <div class="subBtns">
                     <div>
                         <button>()</button>
                         <button>%</button>
@@ -45,16 +42,20 @@
                     </div>
                 </div>
 
-                <div>
-                    <div>
-                        <button>C</button>
-                        <button>/</button>
-                        <button>X</button>
-                        <button>-</button>
-                        <button>+</button>
-                    </div>
+                <div class="operators">
+                    <button>C</button>
+                    <button>/</button>
+                    <button>X</button>
+                    <button>-</button>
+                    <button>+</button>
                 </div>
             </div>
         </div>
+
+        <img class="lampada1" src="./img/lampada.png" alt="lampada">
+        <img class="lampada2" src="./img/lampada.png" alt="lampada">
+
+
+        <script src="./JS/Index.js"></script>
     </body>
 </html>
