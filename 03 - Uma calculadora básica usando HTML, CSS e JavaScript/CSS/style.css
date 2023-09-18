@@ -101,7 +101,7 @@ body {
     height: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 .subBtns div:nth-child(2) {
     width: 100%;
@@ -109,12 +109,77 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
+
 .subBtns div button {
     width: 90%;
     height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subBtns div:nth-child(1) button {
+    font-family: "GangOfThree";
+    font-size: 26px;
+    background: none;
+    border: none;
+    border-radius: 6px;
+    color: #535353;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.subBtns div:nth-child(1) button:hover {
+    color: #0effb9;
+    background: #0effbb0a;
+}
+.subBtns div:nth-child(1) button:nth-child(3) {
+    font-size: 24px;
+} 
+.subBtns div:nth-child(1) button:nth-child(1):hover {
+    color: #2ed9eb;
+    background: #2ed8eb0a;
+}
+.subBtns div:nth-child(1) button:nth-child(2):hover {
+    color: #2ed9eb;
+    background: #2ed8eb0a;
+}
+.subBtns div:nth-child(1) button:nth-child(3):hover {
+    color: #2ed9eb;
+    background: #2ed8eb0a;
+}
+
+.subBtns div:nth-child(2) button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subBtns div:nth-child(2) button:nth-child(1) {
+    font-family: "GangOfThree";
+    font-size: 26px;
+    background: none;
+    border: none;
+    border-radius: 6px;
+    color: #535353;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.subBtns div:nth-child(2) button:nth-child(1):hover {
+    color: #0effb9;
+    background: #0effbb0a;
 }
 .subBtns div:nth-child(2) button:nth-child(2) {
     width: 95%;
+    background: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #535353;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.subBtns div:nth-child(2) button:nth-child(2):hover {
+    color: #2ed9eb;
+    background: #2ed8eb0a;
 }
 
 .operators {
@@ -127,21 +192,25 @@ body {
 .operators button {
     width: 90%;
     height: 90%;
-}
-
-.operators button:nth-child(1) {
-    position: relative;
-    border-radius: 50%;
-    font-family: "GangOfThree";
-    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: none;
-    border: 3px solid #535353 ;
+    border: none;
+    border-radius: 6px;
+    font-family: "GangOfThree";
+    font-size: 18px;
     color: #535353;
     cursor: pointer;
     transition: 0.3s;
 }
-.operators button:nth-child(1):hover {
-    background: #2ed9eb;
-    color: #1c1c1c;
-    border: 3px solid #2ed9eb;
+.operators button:nth-child(5) {
+    font-size: 16px;
+}
+.operators button:nth-child(1) {
+    font-size: 16px;
+}
+.operators button:hover {
+    color: #2ed9eb;
+    background: #2ed8eb0a;
 }
