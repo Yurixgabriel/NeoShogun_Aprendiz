@@ -81,3 +81,38 @@ body {
     -webkit-background-clip: text;
 }
 
+.btns {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subBtns {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subBtns div:nth-child(1) {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.subBtns div:nth-child(2) {
+    width: 100%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.operators {
+    width: 20%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
