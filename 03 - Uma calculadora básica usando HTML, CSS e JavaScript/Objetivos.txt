@@ -1,0 +1,13 @@
+Objetivos Principais:
+- Criar uma interface de usuário com elementos HTML para a calculadora.
+- Implementar lógica em JavaScript para realizar operações de adição, subtração, multiplicação e divisão.
+- Exibir os números digitados e o resultado das operações de forma clara na interface.
+- Adicionar estilos CSS para tornar a calculadora visualmente atraente.
+- Testar a calculadora para garantir que funcione de forma confiável.
+
+Desafios Adicionais:
+- Implementar operações adicionais, como porcentagem ou raiz quadrada.
+- Adicionar um botão de limpar (C) para reiniciar os cálculos.
+- Personalizar o design da calculadora com cores e estilos exclusivos.
+- Tornar a interface da calculadora responsiva para diferentes tamanhos de tela.
+- Melhorar a usabilidade, por exemplo, permitir o uso de teclado para entrada.
