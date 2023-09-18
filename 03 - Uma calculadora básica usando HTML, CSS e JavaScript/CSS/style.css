@@ -8,3 +8,15 @@ body {
     background-image: url(../img/fundo.jpg);
     background-size: cover;
 }
+
+.lampada1 {
+    position: absolute;
+    top: 0%;
+    width: 12%;
+}
+.lampada2 {
+    position: absolute;
+    top: -2%;
+    right: 10%;
+    width: 8%;
+}
