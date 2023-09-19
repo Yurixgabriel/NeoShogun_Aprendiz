@@ -1,7 +1,9 @@
 var display = document.getElementById("display");
+var result = document.getElementById("result");
 
 function clearDisplay() {
     display.value = "";
+    prevResult();
 }
 
 function dellete() {
@@ -18,6 +20,7 @@ function dellete() {
 function elementos(elemento) {
     var valor = elemento.value;
     display.value += valor;
+    prevResult();
 }
 
 function parenteses() {
@@ -44,3 +47,30 @@ function parenteses() {
         }
     }
 }
+
+function resultado() {
+    if(display.value != "") {
+        try {
+            display.value = result.value;
+        } catch (error) {
+
+            display.value = 'Erro';
+        }
+    }
+}
+
+function prevResult() {
+    if(display.value != "") {
+        try {
+            const expressao = eval(display.value);
+
+            result.textContent = expressao;
+        } catch (error) {
+
+            result.textContent = 'Erro';
+        }
+    } else {
+        result.textContent = "---";
+    }
+}
+prevResult();
