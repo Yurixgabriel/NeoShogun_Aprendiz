@@ -14,7 +14,7 @@
         <div class="calculadora">
             <!-- Display -->
             <div class="display">
-                <input type="text" id="display">
+                <textarea name="display" id="display" cols="30" rows="10"></textarea>
                 <span id="result">---</span>
             </div>
 
@@ -22,7 +22,7 @@
             <div class="btns">
                 <div class="subBtns">
                     <div>
-                        <button>C</button>
+                        <button onclick="clearDisplay('display')">C</button>
                         <button>( )</button>
                         <button><i class="fa-solid fa-percent"></i></button>
                         <button>7</button>
