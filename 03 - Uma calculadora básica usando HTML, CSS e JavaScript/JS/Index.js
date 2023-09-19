@@ -48,17 +48,6 @@ function parenteses() {
     }
 }
 
-function resultado() {
-    if(display.value != "") {
-        try {
-            display.value = result.value;
-        } catch (error) {
-
-            display.value = 'Erro';
-        }
-    }
-}
-
 function prevResult() {
     if(display.value != "") {
         try {
@@ -74,3 +63,18 @@ function prevResult() {
     }
 }
 prevResult();
+
+function resultado() {
+    prevResult();
+
+    if(display.value != "") {
+        try {
+            display.value = result.textContent;
+        } catch (error) {
+
+            display.value = 'Erro';
+        }
+    }
+
+    result.textContent = "---";
+}
