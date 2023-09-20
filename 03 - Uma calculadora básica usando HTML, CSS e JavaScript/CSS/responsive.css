@@ -1,0 +1,11 @@
+@media screen and (max-width: 1000px) {
+    .calculadora {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .calculadora {
+        width: 96%;
+    }
+}
