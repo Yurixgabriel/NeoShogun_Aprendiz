@@ -1,0 +1,13 @@
+Objetivos Principais:
+- Criar uma interface de usuário com elementos HTML para a lista de tarefas.
+- Implementar lógica em JavaScript para adicionar, remover e marcar tarefas como concluídas.
+- Exibir as tarefas de forma clara e organizada na interface.
+- Adicionar estilos CSS para tornar a lista de tarefas visualmente atraente.
+- Testar a lista de tarefas para garantir que funcione de forma confiável.
+
+Desafios Adicionais:
+- Implementar a capacidade de editar o texto das tarefas.
+- Adicionar categorias ou tags para organizar as tarefas.
+- Personalizar o design da lista de tarefas com cores e estilos únicos.
+- Tornar a interface da lista de tarefas responsiva para diferentes tamanhos de tela.
+- Experimentar a funcionalidade de arrastar e soltar para reorganizar as tarefas.
