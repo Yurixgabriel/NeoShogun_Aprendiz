@@ -9,18 +9,24 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <div>
+        <div class="box01">
             <div class="listaTarefas">
                 <div class="dadosPerfil">
+                    <div>
+                        <h2>Yuri Gabriel</h2>
+                        <p>Desenvolvedor ******</p>
+                    </div>
 
+                    <div class="fotoPerfil"></div>
                 </div>
 
                 <div class="pesquisaTarefas">
-
+                    <input type="text">
                 </div>
 
                 <div class="dadosTarefas">
-
+                    <h3>00</h3>
+                    <h3>00</h3>
                 </div>
 
                 <div class="tarefas">
@@ -33,12 +39,34 @@
             </div>
 
             <div class="detalhesTarefa">
-                
+                <h1>titulo da tarefa</h1>
+
+                <button>X</button>
+
+                <p><strong>Descrição: </strong></p>
+
+                <div>
+                    <h4>status</h4>
+
+                    <div class="corTarefa"></div>
+                </div>
             </div>
         </div>
 
         <div class="criarTarefa">
+            <input type="text" id="" placeholder="Titulo:">
 
+            <div>
+                <input type="radio" name="cor" value="opcao1"> Opção 1
+                <input type="radio" name="cor" value="opcao2"> Opção 2
+                <input type="radio" name="cor" value="opcao3"> Opção 3
+                <input type="radio" name="cor" value="opcao4"> Opção 4
+                <input type="radio" name="cor" value="opcao5" checked> Opção 5
+            </div>
+
+            <textarea rows="5" cols="32" placeholder="Descreva aqui sua tarefa..."></textarea>
+
+            <button>Criar Tarefa</button>
         </div>
     </body>
 </html>
