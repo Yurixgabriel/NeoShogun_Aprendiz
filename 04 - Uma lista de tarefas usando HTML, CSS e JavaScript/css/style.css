@@ -1,5 +1,108 @@
+@font-face {
+    font-family: "GangOfThree";
+    src: url("../font/go3v2.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Kashima";
+    src: url("../font/Kashima\ Demo.otf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Inversionz";
+    src: url("../font/Inversionz\ Unboxed.otf") format("truetype");
+    font-weight: normal;
+}
+
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #181818;
+}
+
+.listaTarefas {
+    width: 26%;
+    height: 80%;
+    padding: 20px;
+    background: #1c1c1c;
+    border-radius: 10px;
+}
+.listaTarefas img {
+    width: 18px;
+}
+
+.dadosPerfil {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dadosPerfil div h3 {
+    font-family: "GangOfThree";
+    color: transparent;
+    background-image: linear-gradient(to bottom right, #2ed9eb, #0effb9);
+    -webkit-background-clip: text;
+}
+.dadosPerfil div p {
+    font-family: "Inversionz";
+    font-size: 16px;
+    color: #474747;
+}
+.fotoPerfil {
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/perfil\ lobo.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.pesquisaTarefas {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pesquisaTarefas input {
+    width: 80%;
+    height: 30px;
+    padding-left: 6px;
+    background: transparent;
+    font-family: "GangOfThree";
+    color: #2ed9eb;
+    border: none;
+    border-top: 1px solid #2ed9eb;
+    border-left: 1px solid #2ed9eb;
+    border-bottom: 1px solid #2ed9eb;
+    border-radius: 6px 0px 0px 6px;
+}
+.pesquisaTarefas input::placeholder {
+    color: #474747;
+}
+.pesquisaTarefas button {
+    width: 20%;
+    height: 30px;
+    background: #2ed9eb;
+    color: #181818;
+    border: none;
+    border-top: 1px solid #2ed9eb;
+    border-right: 1px solid #2ed9eb;
+    border-bottom: 1px solid #2ed9eb;
+    border-radius: 0px 6px 6px 0px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.pesquisaTarefas button:hover {
+    background: none;
+    color: #2ed9eb;
+}
+
