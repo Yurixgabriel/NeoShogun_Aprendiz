@@ -152,30 +152,39 @@ body {
     margin-right: -4px;
     background: #2ed9eb;
     border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tarefa button {
+    width: 10%;
+    height: 80%;
+    background: none;
+    color: #1818185e;
+    border: none;
+    border-right: 2px solid #18181818;
     cursor: pointer;
     transition: 0.3s;
 }
-.tarefa:hover {
-    background: #181818;
+.tarefa button:hover {
+    color: #181818;
 }
 
 .btnAddTask {
     width: 26px;
     height: 26px;
-    font-family: "Inversionz";
-    font-size: 28px;
-    color: #2ed9eb;
-    text-align: center;
     background: none;
     border: 2px solid #2ed9eb;
+    color: #2ed9eb;
+    font-size: 20px;
     border-radius: 50%;
-    padding-left: 1px;
     cursor: pointer;
     transition: 0.3s;
 }
 .btnAddTask:hover {
     background: #2ed9eb;
-    color: #1c1c1c;
+    color: #181818;
 }
 
 .Box2 {
