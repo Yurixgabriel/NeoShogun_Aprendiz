@@ -160,19 +160,22 @@ body {
 }
 
 .btnAddTask {
-    width: 80%;
-    height: 30px;
-    font-family: "GangOfThree";
-    color: #181818;
-    background: #2ed9eb;
+    width: 26px;
+    height: 26px;
+    font-family: "Inversionz";
+    font-size: 28px;
+    color: #2ed9eb;
+    text-align: center;
+    background: none;
     border: 2px solid #2ed9eb;
-    border-radius: 6px;
+    border-radius: 50%;
+    padding-left: 1px;
     cursor: pointer;
     transition: 0.3s;
 }
 .btnAddTask:hover {
-    background: none;
-    color: #2ed9eb;
+    background: #2ed9eb;
+    color: #1c1c1c;
 }
 
 .Box2 {
