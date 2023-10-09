@@ -24,7 +24,6 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,6 +222,7 @@ body {
     cursor: pointer;
 }
 .checkbox input {
+    display: none;
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
