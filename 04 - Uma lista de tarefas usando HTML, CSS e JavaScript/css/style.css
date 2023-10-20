@@ -34,6 +34,7 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: start;
     overflow: hidden;
@@ -346,53 +347,3 @@ body {
     color: #181818;
 }
 
-/*Box 2*/
-.Box2 {
-    width: 70%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: none;
-}
-
-/*Navegar entre as boxes*/
-.btnTools {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 40px;
-    height: 120px;
-    box-shadow: 0px 0px 20px black;
-}
-.btnTools div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background: #1c1c1c;
-    border-right: 2px solid #2ed9eb;
-    border-bottom: 2px solid #2ed9eb;
-    border-radius: 0px 0px 16px 0px;
-    box-shadow: 0px 0px 0px 6px #1c1c1c;
-}
-.btnTools .boxSelected {
-    color: #2ed9eb;
-    cursor: default;
-}
-.btnTools div button {
-    background: none;
-    border: none;
-    color: #474747;
-    font-size: 20px;
-    margin-left: -2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.btnTools div button:hover {
-    color: #2ed9eb;
-}
