@@ -347,3 +347,118 @@ body {
     color: #181818;
 }
 
+/*DETALHES DA TAREFA*/
+.detalhesTarefa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.26);
+    backdrop-filter: blur(6px);
+}
+
+.detalhesTarefa_content {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #1c1c1c;
+    border: 3px solid #2ed9eb;
+    border-radius: 12px;
+    box-shadow: 0px 0px 0px 12px #1c1c1c;
+}
+
+.detalhesTarefa_content h1 {
+    width: 96%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    font-family: "GangOfThree";
+    font-weight: normal;
+    font-size: 20px;
+    color: #2ed9eb;
+}
+
+.tarefaDesk2 {
+    position: relative;
+    width: 80%;
+    height: 70%;
+    margin-top: -6px;
+    padding: 20px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border: 2px solid #2ed9eb;
+    border-radius: 10px;
+}
+.tarefaDesk2 h4 {
+    position: absolute;
+    top: -4%;
+    width: 160px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2ed9eb;
+    font-family: "GangOfThree";
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    color: #181818;
+    border-radius: 4px;
+}
+.tarefaDesk2 p {
+    width: 100%;
+    height: 100%;
+    font-family: "Inversionz";
+    font-size: 12px;
+    color: #2ed9eb;
+    text-align: center;
+}
+
+.tarefaDeskTools {
+    width: 100%;
+    height: 6%;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tarefaDeskTools button:nth-child(2) {
+    width: 30%;
+    height: 98%;
+    background: #2ed9eb;
+    font-family: "GangOfThree";
+    font-size: 14px;
+    color: #181818;
+    border: 3px solid #2ed9eb;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.tarefaDeskTools button:nth-child(2):hover {
+    background: none;
+    color: #2ed9eb;
+}
+.tarefaDeskTools button {
+    width: 10%;
+    height: 80%;
+    background: none;
+    font-size: 16px;
+    color: #474747;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.tarefaDeskTools button:hover {
+    color: #2ed9eb;
+}
