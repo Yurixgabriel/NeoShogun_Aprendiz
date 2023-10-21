@@ -25,7 +25,7 @@
                     </div>
         
                     <ul class="listaTarefas">
-                        <li class="tarefa taskCheck">
+                        <li onclick="TaskDesk(this)" class="tarefa taskCheck">
                             <button><i class="fa-solid fa-up-down-left-right"></i></button>
                             
                             <div class="tarefaDesk">
@@ -153,7 +153,7 @@
             </div>
         </div>
 
-        <div class="detalhesTarefa">
+        <div id="detalhesTarefa" class="detalhesTarefa" style="display: none;">
             <div class="detalhesTarefa_content">
                 <h1>titulo da tarefa</h1>
 
@@ -164,7 +164,7 @@
 
                 <div class="tarefaDeskTools">
                     <button><i class="fa-solid fa-pen"></i></button>
-                    <button>close</button>
+                    <button onclick="TaskDesk()">close</button>
                     <button><i class="fa-solid fa-trash"></i></button>
                 </div>
             </div>

@@ -354,11 +354,19 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.26);
     backdrop-filter: blur(6px);
+    animation: open1 0.3s ease-out;
+}
+@keyframes open1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .detalhesTarefa_content {
@@ -372,6 +380,15 @@ body {
     border: 3px solid #2ed9eb;
     border-radius: 12px;
     box-shadow: 0px 0px 0px 12px #1c1c1c;
+    animation: open2 0.5s ease-out;
+}
+@keyframes open2 {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .detalhesTarefa_content h1 {
