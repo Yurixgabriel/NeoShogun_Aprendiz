@@ -585,7 +585,7 @@ body {
 }
 
 .criarTarefa_content {
-    width: 30%;
+    width: 20%;
     height: 60%;
     overflow: hidden;
     display: flex;
@@ -608,7 +608,7 @@ body {
         height: 60%;
     }
     100% {
-        width: 30%;
+        width: 20%;
         height: 60%;
     }
 }
@@ -621,6 +621,7 @@ body {
     background: none;
     outline: none;
     border: none;
+    text-align: center;
     font-family: "GangOfThree";
     font-size: 18px;
     color: #2ed9eb;

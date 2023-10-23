@@ -59,11 +59,15 @@ function deletTask() {
 
 function pop_upAddTask() {
     const popupAddTask = document.getElementById("popupAddTask");
+    var title = document.getElementById("newTaskTitle");
+    var description = document.getElementById("newTaskDescription");
 
     if(popupAddTask.style.display == "none") {
         popupAddTask.style.display = "flex";
     } else {
         popupAddTask.style.display = "none";
+        title.value = "";
+        description.value = "";
     }
 }
 
@@ -122,4 +126,14 @@ function addTask(newTask) {
     title.value = "";
     description.value = "";
     pop_upAddTask();
+}
+
+function editTask() {
+    const popupEditTask = document.getElementById("popupEditTask");
+
+    if(popupEditTask.style.display == "none") {
+        popupEditTask.style.display = "flex";
+    } else {
+        popupEditTask.style.display = "none";
+    }
 }

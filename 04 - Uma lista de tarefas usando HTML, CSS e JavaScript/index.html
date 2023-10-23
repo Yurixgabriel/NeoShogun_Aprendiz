@@ -181,13 +181,26 @@
 
         <div id="popupAddTask" class="criarTarefa" style="display: none;">
             <div class="criarTarefa_content">
-                <input type="text" placeholder="Coloque o título da sua nova tarefa...">
+                <input id="newTaskTitle" type="text" placeholder="título">
 
                 <textarea id="newTaskDescription" rows="5" cols="32" placeholder="Descreva aqui a sua nova tarefa..."></textarea>
 
                 <div>
-                    <button onclick="addTask('popupAddTask')">Criar Tarefa</button>
+                    <button onclick="addTask('popupAddTask')">Criar</button>
                     <button onclick="pop_upAddTask()">cancelar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="popupEditTask" class="criarTarefa" style="display: none;">
+            <div class="criarTarefa_content">
+                <input type="text" placeholder="título">
+
+                <textarea id="taskEditDescription" rows="5" cols="32" placeholder="Descreva aqui a sua nova tarefa..."></textarea>
+
+                <div>
+                    <button onclick="editTask('popupEditTask')">Salvar</button>
+                    <button onclick="editTask()">cancelar</button>
                 </div>
             </div>
         </div>
