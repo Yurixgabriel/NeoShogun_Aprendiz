@@ -57,6 +57,48 @@ function deletTask() {
     }
 }
 
+function popupEditTask() {
+    const popupEditTask = document.getElementById("popupEditTask");
+    const btn = document.getElementById("btnPen");
+
+    if(popupEditTask.style.display == "none") {
+        popupEditTask.style.display = "flex";
+        btn.className = "btnAtiveted";
+
+        var title = document.getElementById("taskEditTitle");
+        var desk = document.getElementById("taskEditDescription");
+        var taskTitle = document.getElementById("taskTitle");
+        var taskDescription = document.getElementById("taskDescription");
+
+        title.value = taskTitle.textContent;
+        desk.value = taskDescription.textContent
+    } else {
+        popupEditTask.style.display = "none";
+        btn.classList.remove("btnAtiveted");
+    }
+}
+
+function editTask() {
+    var title = document.getElementById("taskEditTitle");
+    var description = document.getElementById("taskEditDescription");
+
+    var taskTitle = document.getElementById("taskTitle");
+    var taskDescription = document.getElementById("taskDescription");
+
+    var desk = taskReference.querySelector(".tarefaDesk");
+    var h4 = desk.querySelector("h4");
+    var p = desk.querySelector("div p");
+
+    if(title.value !== taskTitle.textContent || description.value !== taskDescription.textContent) {
+        taskTitle.textContent = title.value;
+        taskDescription.textContent = description.value;
+        h4.textContent = title.value;
+        p.textContent = description.value;
+    }
+
+    popupEditTask();
+}
+
 function pop_upAddTask() {
     const popupAddTask = document.getElementById("popupAddTask");
     var title = document.getElementById("newTaskTitle");
@@ -126,14 +168,4 @@ function addTask(newTask) {
     title.value = "";
     description.value = "";
     pop_upAddTask();
-}
-
-function editTask() {
-    const popupEditTask = document.getElementById("popupEditTask");
-
-    if(popupEditTask.style.display == "none") {
-        popupEditTask.style.display = "flex";
-    } else {
-        popupEditTask.style.display = "none";
-    }
 }

@@ -163,7 +163,7 @@
                 </div>
 
                 <div class="tarefaDeskTools">
-                    <button onclick="editTask()" class=""><i class="fa-solid fa-pen"></i></button>
+                    <button onclick="popupEditTask()" id="btnPen" class=""><i class="fa-solid fa-pen"></i></button>
                     <button onclick="TaskDesk()">close</button>
                     <button onclick="deletTask()" id="btnTrash" class=""><i class="fa-solid fa-trash"></i></button>
                 </div>
@@ -194,13 +194,13 @@
 
         <div id="popupEditTask" class="criarTarefa" style="display: none;">
             <div class="criarTarefa_content">
-                <input type="text" placeholder="título">
+                <input id="taskEditTitle" type="text" placeholder="título">
 
                 <textarea id="taskEditDescription" rows="5" cols="32" placeholder="Descreva aqui a sua nova tarefa..."></textarea>
 
                 <div>
-                    <button onclick="editTask('popupEditTask')">Salvar</button>
-                    <button onclick="editTask()">cancelar</button>
+                    <button onclick="editTask()">Salvar</button>
+                    <button onclick="popupEditTask()">cancelar</button>
                 </div>
             </div>
         </div>
