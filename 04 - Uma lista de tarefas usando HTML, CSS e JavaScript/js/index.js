@@ -113,24 +113,21 @@ function pop_upAddTask() {
     }
 }
 
+const LT = document.getElementById("listaTarefas");
+var tarefas = LT.querySelectorAll(".tarefa");
+var count = (tarefas.length + 1);
 function addTask(newTask) {
     const popup = document.getElementById(newTask);
     var title = popup.querySelector(".criarTarefa_content input");
     var description = document.getElementById("newTaskDescription");
     const listaTarefas = document.getElementById("listaTarefas");
-    var tarefas = listaTarefas.querySelectorAll(".tarefa");
+    count++;
 
     var li = document.createElement("li");
     li.addEventListener("click", function() {
         TaskDesk(this);
     });
     li.className = "tarefa";
-
-    var btn = document.createElement("button");
-    var icon1 = document.createElement("i");
-    icon1.className = "fa-solid fa-up-down-left-right";
-    btn.appendChild(icon1);
-    li.appendChild(btn);
 
     var div1 = document.createElement("div");
     div1.className = "tarefaDesk";
@@ -153,14 +150,17 @@ function addTask(newTask) {
     div2.className = "checkbox";
     //input
     var input = document.createElement("input");
+    input.addEventListener("change", function() {
+        checkedBox(this);
+    });
     input.type = "checkbox";
-    input.id = "chk" + (tarefas.length + 1);
+    input.id = "chk" + count;
     input.className = "checkbox";
     input.name = "chk";
     div2.appendChild(input);
     //checkbox
     var check = document.createElement("label");
-    check.setAttribute("for", "chk" + (tarefas.length + 1));
+    check.setAttribute("for", "chk" + count);
     div2.appendChild(check);
     li.appendChild(div2);
 
@@ -180,3 +180,20 @@ function checkedBox(checkbox) {
         li.classList.remove("taskCheck");
     }
 }
+
+const searchInput = document.getElementById('searchInput');
+const listaTarefas = document.getElementById('listaTarefas');
+
+searchInput.addEventListener('input', () => {
+    const h4Elements = listaTarefas.querySelectorAll('.tarefaDesk h4');
+    const searchTerm = searchInput.value.toLowerCase();
+
+    h4Elements.forEach((h4) => {
+    const text = h4.textContent.toLowerCase();
+    if (text.includes(searchTerm)) {
+        h4.parentElement.parentElement.style.display = 'flex';
+    } else {
+        h4.parentElement.parentElement.style.display = 'none';
+    }
+    });
+});

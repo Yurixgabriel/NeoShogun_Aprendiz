@@ -164,21 +164,6 @@ body {
     transition: 0.3s;
 }
 
-/*Btn para mover as tarefas*/
-.tarefa button {
-    width: 10%;
-    height: 80%;
-    background: none;
-    color: #2ed8eb31;
-    border: none;
-    border-right: 2px solid #2ed8eb31;
-    cursor: move;
-    transition: 0.3s;
-}
-.tarefa button:hover {
-    color: #181818;
-}
-
 /*Bio da tarefa*/
 .tarefaDesk {
     width: 80%;
@@ -276,13 +261,6 @@ body {
 .tarefa:hover {
     background: #2ed9eb;
 }
-.tarefa:hover button {
-    color: #1818185e;
-    border-right: 2px solid #18181831;
-}
-.tarefa:hover button:hover {
-    color: #181818;
-}
 .tarefa:hover div i {
     color: #1818185e;
 }
@@ -311,13 +289,7 @@ body {
 .taskCheck .tarefaDesk div i, .taskCheck .tarefaDesk div p {
     color: #474747;
 }
-.taskCheck:hover button, .taskCheck button {
-    color: #47474793;
-    border-right: 2px solid #47474749;
-}
-.taskCheck:hover button:hover, .taskCheck button:hover {
-    color: #47474793;
-}
+
 .taskCheck:hover .checkbox label, .taskCheck .checkbox label {
     border: 2px solid #474747;
 }
