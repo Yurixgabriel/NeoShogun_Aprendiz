@@ -25,7 +25,7 @@
                     </div>
         
                     <ul id="listaTarefas" class="listaTarefas">
-                        <li onclick="TaskDesk(this)" id="T1" class="tarefa taskCheck">
+                        <li onclick="TaskDesk(this)" class="tarefa taskCheck">
                             <button><i class="fa-solid fa-up-down-left-right"></i></button>
                             
                             <div class="tarefaDesk">
@@ -42,7 +42,7 @@
                                 <label for="chk1"></label>
                             </div>
                         </li>
-                        <li onclick="TaskDesk(this)" id="T2" class="tarefa">
+                        <li onclick="TaskDesk(this)" class="tarefa">
                             <button><i class="fa-solid fa-up-down-left-right"></i></button>
                             
                             <div class="tarefaDesk">
@@ -59,7 +59,7 @@
                                 <label for="chk2"></label>
                             </div>
                         </li>
-                        <li onclick="TaskDesk(this)" id="T3" class="tarefa">
+                        <li onclick="TaskDesk(this)" class="tarefa">
                             <button><i class="fa-solid fa-up-down-left-right"></i></button>
                             
                             <div class="tarefaDesk">
@@ -76,7 +76,7 @@
                                 <label for="chk3"></label>
                             </div>
                         </li>
-                        <li onclick="TaskDesk(this)" id="T4" class="tarefa">
+                        <li onclick="TaskDesk(this)" class="tarefa">
                             <button><i class="fa-solid fa-up-down-left-right"></i></button>
                             
                             <div class="tarefaDesk">
@@ -93,7 +93,7 @@
                                 <label for="chk4"></label>
                             </div>
                         </li>
-                        <li onclick="TaskDesk(this)" id="T5" class="tarefa">
+                        <li onclick="TaskDesk(this)" class="tarefa">
                             <button><i class="fa-solid fa-up-down-left-right"></i></button>
                             
                             <div class="tarefaDesk">
@@ -110,7 +110,7 @@
                                 <label for="chk5"></label>
                             </div>
                         </li>
-                        <li onclick="TaskDesk(this)" id="T6" class="tarefa">
+                        <li onclick="TaskDesk(this)" class="tarefa">
                             <button><i class="fa-solid fa-up-down-left-right"></i></button>
                             
                             <div class="tarefaDesk">
@@ -127,7 +127,7 @@
                                 <label for="chk6"></label>
                             </div>
                         </li>
-                        <li onclick="TaskDesk(this)" id="T7" class="tarefa">
+                        <li onclick="TaskDesk(this)" class="tarefa">
                             <button><i class="fa-solid fa-up-down-left-right"></i></button>
                             
                             <div class="tarefaDesk">
@@ -147,7 +147,7 @@
                     </ul>
 
                     <div class="btnAddTask">
-                        <button>+</i></button>
+                        <button onclick="pop_upAddTask()">+</i></button>
                     </div>
                 </div>
             </div>
@@ -179,20 +179,17 @@
             </div>
         </div>
 
-        <div class="criarTarefa" hidden>
-            <input type="text" id="" placeholder="Titulo:">
+        <div id="popupAddTask" class="criarTarefa" style="display: none;">
+            <div class="criarTarefa_content">
+                <input type="text" placeholder="Coloque o título da sua nova tarefa...">
 
-            <div>
-                <input type="radio" name="cor" value="opcao1"> Opção 1
-                <input type="radio" name="cor" value="opcao2"> Opção 2
-                <input type="radio" name="cor" value="opcao3"> Opção 3
-                <input type="radio" name="cor" value="opcao4"> Opção 4
-                <input type="radio" name="cor" value="opcao5" checked> Opção 5
+                <textarea id="newTaskDescription" rows="5" cols="32" placeholder="Descreva aqui a sua nova tarefa..."></textarea>
+
+                <div>
+                    <button onclick="addTask('popupAddTask')">Criar Tarefa</button>
+                    <button onclick="pop_upAddTask()">cancelar</button>
+                </div>
             </div>
-
-            <textarea rows="5" cols="32" placeholder="Descreva aqui sua tarefa..."></textarea>
-
-            <button>Criar Tarefa</button>
         </div>
 
 
