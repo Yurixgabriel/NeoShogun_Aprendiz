@@ -169,3 +169,14 @@ function addTask(newTask) {
     description.value = "";
     pop_upAddTask();
 }
+
+function checkedBox(checkbox) {
+    var div = checkbox.parentNode;
+    var li = div.parentNode;
+
+    if(checkbox.checked) {
+        li.classList.add("taskCheck");
+    } else {
+        li.classList.remove("taskCheck");
+    }
+}

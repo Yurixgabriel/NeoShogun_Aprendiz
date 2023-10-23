@@ -314,7 +314,6 @@ body {
 .taskCheck:hover button, .taskCheck button {
     color: #47474793;
     border-right: 2px solid #47474749;
-    cursor: default;
 }
 .taskCheck:hover button:hover, .taskCheck button:hover {
     color: #47474793;
