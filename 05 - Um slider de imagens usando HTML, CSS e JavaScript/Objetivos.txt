@@ -1,0 +1,13 @@
+Objetivos Principais:
+- Criar uma interface de slider de imagens com elementos HTML.
+- Implementar lógica em JavaScript para permitir a navegação entre as imagens.
+- Exibir as imagens de forma atraente e com controles de avanço/retrocesso.
+- Adicionar estilos CSS para tornar o slider visualmente atraente.
+- Testar o slider de imagens para garantir que funcione de forma confiável.
+
+Desafios Adicionais:
+- Implementar uma transição suave entre as imagens.
+- Adicionar controles de reprodução automática para o slider.
+- Personalizar o design do slider com animações e estilos únicos.
+- Tornar a interface do slider responsiva para diferentes tamanhos de tela.
+- Incorporar uma legenda para cada imagem.
