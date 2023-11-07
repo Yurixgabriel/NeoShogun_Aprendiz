@@ -1,7 +1,7 @@
 Objetivos Principais:
-- Criar uma interface de slider de imagens com elementos HTML.
+- Criar uma interface de slider de imagens com elementos HTML. X
 - Implementar lógica em JavaScript para permitir a navegação entre as imagens.
-- Exibir as imagens de forma atraente e com controles de avanço/retrocesso.
+- Exibir as imagens de forma atraente e com controles de avanço/retrocesso. X
 - Adicionar estilos CSS para tornar o slider visualmente atraente.
 - Testar o slider de imagens para garantir que funcione de forma confiável.
 
