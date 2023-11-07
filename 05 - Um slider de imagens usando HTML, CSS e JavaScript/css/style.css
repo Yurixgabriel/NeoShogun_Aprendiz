@@ -50,3 +50,18 @@ body {
     height: 260px;
     background-color: #4CAF50;
 }
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn button {
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    font-family: "Inversionz";
+    font-size: 18px;
+}
+
