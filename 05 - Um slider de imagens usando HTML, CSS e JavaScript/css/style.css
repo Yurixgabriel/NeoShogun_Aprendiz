@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "GangOfThree";
+    src: url("../font/go3v2.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Kashima";
+    src: url("../font/Kashima\ Demo.otf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Inversionz";
+    src: url("../font/Inversionz\ Unboxed.otf") format("truetype");
+    font-weight: normal;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
