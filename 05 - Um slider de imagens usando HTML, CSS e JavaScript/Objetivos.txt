@@ -9,5 +9,5 @@ Desafios Adicionais:
 - Implementar uma transição suave entre as imagens. X
 - Adicionar controles de reprodução automática para o slider. X
 - Personalizar o design do slider com animações e estilos únicos. X
-- Tornar a interface do slider responsiva para diferentes tamanhos de tela.
+- Tornar a interface do slider responsiva para diferentes tamanhos de tela. X
 - Incorporar uma legenda para cada imagem. X

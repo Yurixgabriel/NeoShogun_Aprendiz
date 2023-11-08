@@ -8,11 +8,6 @@
     src: url("../font/Kashima\ Demo.otf") format("truetype");
     font-weight: normal;
 }
-@font-face {
-    font-family: "Inversionz";
-    src: url("../font/Inversionz\ Unboxed.otf") format("truetype");
-    font-weight: normal;
-}
 
 * {
     margin: 0%;
